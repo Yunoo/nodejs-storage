@@ -20,6 +20,7 @@ var arrify = require('arrify');
 var common = require('@google-cloud/common');
 var extend = require('extend');
 var util = require('util');
+var fs = require('fs');
 
 var Bucket = require('./bucket.js');
 var Channel = require('./channel.js');
