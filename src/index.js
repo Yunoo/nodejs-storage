@@ -98,7 +98,7 @@ function Storage(options) {
       'https://www.googleapis.com/auth/cloud-platform',
       'https://www.googleapis.com/auth/devstorage.full_control',
     ],
-    packageJson: require('../package.json'),
+    packageJson: JSON.parse(fs.readFileSync('../package.json', 'utf8')),
   };
 
   common.Service.call(this, config, options);
